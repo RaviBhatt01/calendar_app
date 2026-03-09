@@ -1,3 +1,4 @@
+import 'package:calendar_app/src/features/calendar/presentation/view/calendar_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,9 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calendar App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.deepPurple,
       ),
-      // home: const MyHomePage(title: 'Calendar App'),
+      debugShowCheckedModeBanner: false,
+      home: const CalendarPage(),
     );
   }
 }
